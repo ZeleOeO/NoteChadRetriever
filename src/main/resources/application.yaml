@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: NoteChadRetriever
+server:
+  port: 8081

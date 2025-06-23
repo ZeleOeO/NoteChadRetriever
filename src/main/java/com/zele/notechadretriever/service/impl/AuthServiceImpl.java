@@ -32,7 +32,9 @@ public class AuthServiceImpl implements AuthService {
                     LoginAPIResponse.class
             ).getBody();
 
-            if (loginAPIResponse == null) {return ResponseEntity.badRequest().build();}
+            if (loginAPIResponse == null) {
+                return ResponseEntity.badRequest().build();
+            }
 
             return ResponseEntity.status(HttpStatus.OK).body(new DefaultAPIResponse<>(loginAPIResponse.getStatus(), loginAPIResponse.getMessage(), loginAPIResponse.getJwt()));
         } catch (RuntimeException e) {

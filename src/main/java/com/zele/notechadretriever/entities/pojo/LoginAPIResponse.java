@@ -6,9 +6,9 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class DefaultAPIResponse {
+public class LoginAPIResponse {
     private int status;
     private String message;
     @JsonProperty("data")
-    private String jwt ;
+    private String jwt;
 }

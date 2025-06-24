@@ -3,3 +3,7 @@ spring:
     name: NoteChadRetriever
 server:
   port: 8081
+
+credentials:
+  username: johndoe123
+  password: securePassword123
